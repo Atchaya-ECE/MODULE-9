@@ -20,7 +20,7 @@ To write a Python class-based program that generates all even numbers between 20
 ---
 
 ## 💻 PROGRAM:
-
+```
 class generate:
     def __init__(self,first,d,last):
         self.first=first
@@ -31,7 +31,7 @@ class generate:
         return l
 series=generate(200,2,301)
 print(series.Ap_generate())
-
+```
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/236e72c7-e79e-4458-b4bf-8be1fb0dd279)
 
@@ -58,7 +58,7 @@ Write a Python class program to store all odd numbers between 500 and 600 in a r
 ---
 
 ## 💻 PROGRAM:
-
+```
 class OddNumbers:
     def __init__(self):
         self.odd_numbers = [num for num in range(599, 499, -2)]
@@ -69,7 +69,7 @@ class OddNumbers:
 odd_numbers_instance = OddNumbers()
 
 print(odd_numbers_instance.get_numbers())
-
+```
 
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/bac77514-fc1a-4f71-851d-187999b39a41)
@@ -96,7 +96,7 @@ To write a Python program to read matrix [3x3] that print the major(main) and mi
 6. Print a newline after each row.
 
 ## 🖥 Program
-
+```
 l=[list(map(int,input().split())) for _ in range(3)]
 print("Matrix:")
 for i in l:
@@ -113,7 +113,7 @@ for i in range(len(l)):
     k-=1
 print("Major Diagonal Elements : ",(*mad))
 print("Minor Diagonal Elements : ",(*mid))
-
+```
 ### Output:
 ![image](https://github.com/user-attachments/assets/78235dd3-d15c-4430-989d-4bb7bc582861)
 
@@ -145,7 +145,7 @@ To write a Python Program to subtract two matrices by reading the matrix from th
 ---
 
 ## 💻 PROGRAM:
-
+```
 def create_matrix(n,m):
     M=[]
     for i in range(n):
@@ -168,7 +168,7 @@ for i in range(int(r)):
 print(A)
 print(B)
 print(C)
-
+```
 
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/c13e49c9-e679-4b64-85af-4df96445863d)
@@ -212,7 +212,7 @@ To develop a Python class with functions to:
 ---
 
 ## 💻 PROGRAM:
-
+```
 class InsertionSorter:
     def __init__(self):
         self.lst = []
@@ -240,10 +240,10 @@ sorter = InsertionSorter()
 sorter.create_list()
 sorter.insertion_sort()
 sorter.print_list()
-
+```
 
 ## OUTPUT:
-
+```
 Enter the number of elements: 5
 Enter the elements:
 23
@@ -252,6 +252,6 @@ Enter the elements:
 8
 19
 Sorted list: [8, 12, 19, 23, 45]
-
+```
 ## RESULT:
 Hence Insertion Sort using a Python class is done.
