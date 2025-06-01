@@ -4,7 +4,7 @@ This Python program reads a matrix of any size from the user and prints **only t
 
 ## 📌 Aim
 
-To write a Python program to print the column-wise sum of a matrix.
+To write a Python program to read matrix [3x3] that print the major(main) and minor(off) diagonal elements.
 ## 🧠 Algorithm
 
 1. Read the number of rows and columns from the user.
@@ -18,26 +18,26 @@ To write a Python program to print the column-wise sum of a matrix.
 
 ## 🖥️ Program
 ```
-rows=int(input())
-columns=int(input())
-matrix=[[0]*columns for row in range(rows)]
+l=[list(map(int,input().split())) for _ in range(3)]
 print("Matrix:")
-for i in range(rows):
-    lines=list(map(int,input().split()))
-    for j in range(columns):
-        matrix[i][j]=lines[j]
-for i in range(rows):
-    for j in range(columns):
-        print(matrix[i][j],end=" ")
-    print()
-for i in range(columns):
-    sum=0
-    for j in range(rows):    
-        sum=sum+matrix[j][i]
-    print('Sum of Columns[',i,'] = ',sum)
+for i in l:
+    print(*i)
+mad=[]
+mid=[]
+k=len(l[0])-1
+for i in range(len(l)):
+    for j in range(len(l[i])):
+        if i==j:
+            mad.append(l[i][j])
+        if j==k:
+            mid.append(l[i][j])
+    k-=1
+print("Major Diagonal Elements : ",(*mad))
+print("Minor Diagonal Elements : ",(*mid))
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/20dbe42a-cc9b-4b7d-9d2c-ce1fe8bafcaa)
+![image](https://github.com/user-attachments/assets/78235dd3-d15c-4430-989d-4bb7bc582861)
+
 
 ## Result
-     Thus the Python program to print the column-wise sum of a matrix.
+     Thus the Python program to read matrix [3x3] that print the major(main) and minor(off) diagonal elements.
